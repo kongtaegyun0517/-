@@ -653,5 +653,29 @@
     </footer>
   </div>
 </div>
+  <script>
+  const modal = document.getElementById("terms-modal");
+  const openBtn = document.getElementById("open-terms");
+  const agreeBtn = document.getElementById("agree-terms");
+  const closeBtns = document.querySelectorAll("[data-close-terms]");
+
+  function openModal() {
+    modal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+
+  openBtn.addEventListener("click", openModal);
+  closeBtns.forEach(btn => btn.addEventListener("click", closeModal));
+
+  agreeBtn.addEventListener("click", () => {
+    localStorage.setItem("termsAgreed", "true");
+    closeModal();
+  });
+</script>
 </body>
 </html>
