@@ -580,52 +580,280 @@ body {
     transform: none;
   }
 }
-/* ===== 약관 모달 CSS ===== */
+/* ========== TERMS MODAL ========== */
+
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.72);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  background:
+    radial-gradient(circle at top, rgba(255, 75, 107, 0.18), transparent 55%),
+    radial-gradient(circle at bottom, rgba(96, 165, 250, 0.22), transparent 55%),
+    rgba(1, 3, 15, 0.92);
+  backdrop-filter: blur(12px);
 }
 
-.modal-backdrop.is-open { display: flex; }
+.modal-backdrop.is-open {
+  display: flex;
+}
 
 .modal {
-  width: min(880px, 100% - 2rem);
-  max-height: min(680px, 100% - 2rem);
-  background: #050811;
-  border-radius: 18px;
-  border: 1px solid rgba(255, 75, 107, 0.45);
+  width: min(880px, 100% - 2.4rem);
+  max-height: min(680px, 100% - 2.4rem);
+  background: radial-gradient(circle at top left, #151728 0, #050712 60%, #02030a 100%);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 28px 80px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  color: #f5f7ff;
+  color: #f6f7ff;
+  position: relative;
 }
 
-.modal-header,
-.modal-footer {
-  padding: 18px 22px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  justify-content: space-between;
+/* 살짝 글리치 같은 디지털 테두리 느낌 */
+.modal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg,
+      rgba(255, 75, 107, 0.45),
+      rgba(96, 165, 250, 0.0) 40%,
+      rgba(244, 114, 182, 0.35));
+  mix-blend-mode: soft-light;
+  opacity: 0.22;
 }
+
+/* 헤더 */
+
+.modal-header {
+  position: relative;
+  padding: 18px 22px 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 1;
+}
+
+.modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.18rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(248, 113, 113, 0.8);
+  background: radial-gradient(circle at top, rgba(248, 113, 113, 0.18), transparent 70%);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fecaca;
+  margin-bottom: 0.4rem;
+}
+
+.modal-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #f97373;
+}
+
+.modal-header h2 {
+  font-size: 1.08rem;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.modal-subtitle {
+  margin-top: 0.15rem;
+  font-size: 0.78rem;
+  color: #a5b4fc;
+}
+
+.modal-close {
+  border: none;
+  background: rgba(15, 23, 42, 0.9);
+  color: #9ca3af;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: background 0.12s ease, color 0.12s ease, transform 0.08s ease;
+}
+
+.modal-close:hover {
+  background: rgba(248, 113, 113, 0.16);
+  color: #fca5a5;
+  transform: translateY(-1px);
+}
+
+.modal-close:active {
+  transform: translateY(0);
+}
+
+/* 본문 */
 
 .modal-body {
-  padding: 18px 22px;
-  overflow-y: auto;
+  position: relative;
+  padding: 16px 22px 16px;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  z-index: 1;
+}
+
+.terms-scroll {
   max-height: 420px;
+  overflow-y: auto;
+}
+
+/* 스크롤바도 어두운 톤 */
+
+.terms-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+.terms-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.7);
+}
+.terms-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f97373, #fb7185);
+  border-radius: 999px;
+}
+
+/* 텍스트 구조 */
+
+.modal-body h3 {
+  margin: 1.1rem 0 0.35rem;
+  font-size: 0.92rem;
+  color: #fca5a5;
+}
+
+.modal-body p {
+  margin-bottom: 0.55rem;
+  color: #e5e7eb;
+}
+
+.modal-body ul {
+  margin: 0 0 0.65rem 1.1rem;
+  padding: 0;
+}
+
+.modal-body li {
+  margin-bottom: 0.3rem;
+  color: #d1d5db;
+}
+
+.terms-intro {
+  margin-bottom: 0.8rem;
+  color: #f9fafb;
+}
+
+.terms-note {
+  margin-top: 0.9rem;
+  font-size: 0.78rem;
+  color: #9ca3c7;
+  border-top: 1px dashed rgba(148, 163, 184, 0.6);
+  padding-top: 0.55rem;
+}
+
+/* 푸터 & 버튼 */
+
+.modal-footer {
+  position: relative;
+  padding: 14px 22px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  z-index: 1;
 }
 
 .btn-primary,
 .btn-outline {
-  min-width: 180px;
-  padding: 0.6rem;
+  min-width: 190px;
+  padding: 0.6rem 1.1rem;
   border-radius: 999px;
-  border: 1px solid #ff4b6b;
+  border: 1px solid #fb7185;
+  font-size: 0.86rem;
   cursor: pointer;
+  transition:
+    background 0.13s ease,
+    color 0.13s ease,
+    box-shadow 0.13s ease,
+    transform 0.07s ease;
 }
-.btn-primary { background:#ff4b6b; color:#050811; }
-.btn-outline { background:transparent; color:#ffb8c5; }
+
+/* 동의 / 거부 버튼은 사이즈·시각적 무게 비슷하게 */
+
+.btn-primary {
+  background: linear-gradient(135deg, #fb7185, #f97373);
+  color: #050713;
+  font-weight: 600;
+  box-shadow:
+    0 0 0 1px rgba(248, 113, 113, 0.3),
+    0 14px 30px rgba(248, 113, 113, 0.4);
+}
+
+.btn-outline {
+  background: rgba(15, 23, 42, 0.9);
+  color: #fecaca;
+  border-color: rgba(248, 113, 113, 0.85);
+  box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.3);
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 0 1px rgba(248, 113, 113, 0.45),
+    0 18px 32px rgba(248, 113, 113, 0.5);
+}
+
+.btn-primary:active,
+.btn-outline:active {
+  transform: translateY(0);
+  box-shadow:
+    0 0 0 1px rgba(248, 113, 113, 0.4),
+    0 8px 16px rgba(15, 23, 42, 0.9);
+}
+
+/* 트리거 버튼 (상단 “이용약관 보기”) */
+
+.terms-trigger {
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: rgba(15, 23, 42, 0.85);
+  color: #e5e7ff;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.terms-trigger::before {
+  content: "ⓘ";
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.terms-trigger:hover {
+  border-color: #fb7185;
+  color: #fecaca;
+}
