@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>다크패턴 아카이브 & 청원</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="다크패턴 피해 사례 아카이브 & 청원 플랫폼" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,9 +26,7 @@
         <a href="#law" data-target="law">법·제도</a>
         <a href="#petition" data-target="petition">청원</a>
         <a href="#assistant" data-target="assistant">상담사</a>
-        <button id="open-terms" class="terms-trigger">
-          이용약관 보기
-        </button>
+        <button id="open-terms" class="terms-trigger">이용약관 보기</button>
       </nav>
     </div>
   </header>
@@ -43,12 +40,12 @@
           <h1>데이터와 약관, 이제는<br><span class="accent">‘공정하게’</span></h1>
           <p class="hero-subtitle">
             이 사이트는 다크패턴(유도 설계)과 불공정 개인정보 이용약관으로 인해
-            소비자가 겪은 실제 피해를 기록하고,<br>
+            소비자가 겪은 실제 피해를 기록하고,<br />
             이를 바탕으로 제도 개선을 요구하는 온라인 청원 플랫폼입니다.
           </p>
           <div class="hero-actions">
-            <a href="#petition" class="btn primary">다크패턴 방지 청원 보기</a>
-            <a href="#patterns" class="btn ghost">다크패턴이 뭔지부터 보기</a>
+            <a href="#petition" class="btn primary" data-target="petition">다크패턴 방지 청원 보기</a>
+            <a href="#patterns" class="btn ghost" data-target="patterns">다크패턴이 뭔지부터 보기</a>
           </div>
           <div class="hero-tags">
             <span class="tag">#darkpattern</span>
@@ -59,7 +56,7 @@
           </div>
         </div>
         <div class="hero-side">
-          <div class="stat-card">
+          <div class="stat-card card">
             <p class="stat-label">인기 앱 100개 중</p>
             <p class="stat-number">97개</p>
             <p class="stat-desc">
@@ -67,16 +64,16 @@
               <span class="muted">– 한국소비자원 실태조사</span>
             </p>
           </div>
-          <div class="stat-card">
+          <div class="stat-card card">
             <p class="stat-label">대표 피해</p>
-            <ul class="compact-list">
+            <ul class="compact-list bullet small">
               <li>모르는 사이에 자동결제 가입</li>
               <li>해지 버튼이 보이지 않는 구독 서비스</li>
               <li>무료 체험 뒤 예고 없는 유료 전환</li>
               <li>과도한 개인정보 수집·제3자 제공</li>
             </ul>
           </div>
-          <div class="sdg-card">
+          <div class="sdg-card card">
             <p class="sdg-label">SDG 프레임</p>
             <p class="sdg-main">SDG 10 · SDG 16</p>
             <p class="sdg-desc">
@@ -103,14 +100,8 @@
           <article class="card">
             <h3>“동의합니다”라는 말 뒤에 숨은 것</h3>
             <ul class="bullet">
-              <li>
-                우리는 앱을 설치하고, 구독을 결제하고, 서비스를 탈퇴하는 과정에서 계속해서
-                “동의합니다”를 누른다.
-              </li>
-              <li>
-                하지만 그 선택은 진짜 ‘선택’이 아니다. 버튼은 숨겨져 있고, 해지는 복잡하며,
-                정보는 의도적으로 흐려진다.
-              </li>
+              <li>우리는 앱을 설치하고, 구독을 결제하고, 서비스를 탈퇴하는 과정에서 계속해서 “동의합니다”를 누른다.</li>
+              <li>하지만 그 선택은 진짜 ‘선택’이 아니다. 버튼은 숨겨져 있고, 해지는 복잡하며, 정보는 의도적으로 흐려진다.</li>
             </ul>
             <p class="highlight-quote">
               가입은 빠르고,<br />
@@ -286,7 +277,7 @@
           </article>
         </div>
 
-        <div class="grid 두">
+        <div class="grid two">
           <article class="card">
             <h3>③ 시민 설문 – 감정 & 통제감</h3>
             <ul class="bullet">
@@ -309,7 +300,7 @@
       </div>
     </section>
 
-    <!-- 5. 중간 결과 ①: 사례 & 규제 -->
+    <!-- 5. 피해 사례 & 규제 흐름 -->
     <section id="findings-cases" class="section page-section">
       <div class="inner">
         <header class="section-header">
@@ -321,14 +312,8 @@
           <article class="card">
             <h3>해외 주요 사례</h3>
             <ul class="bullet">
-              <li>
-                <strong>아마존 프라임</strong> – 해지 미로(Subscription Trap, Obstruction).<br />
-                가입은 원클릭, 해지는 수많은 단계.
-              </li>
-              <li>
-                <strong>포트나이트</strong> – 아동 개인정보 수집 & 오결제 유도(Privacy Zuckering, Interface Interference).
-                수천억 원 규모 합의.
-              </li>
+              <li><strong>아마존 프라임</strong> – 해지 미로(Subscription Trap, Obstruction). 가입은 원클릭, 해지는 수많은 단계.</li>
+              <li><strong>포트나이트</strong> – 아동 개인정보 수집 & 오결제 유도, 수천억 원 규모 합의.</li>
               <li><strong>WhatsApp</strong> – “Agree or Leave” 약관 구조. 동의하지 않으면 사실상 이용 불가.</li>
             </ul>
           </article>
@@ -370,7 +355,7 @@
       </div>
     </section>
 
-    <!-- 6. 중간 결과 ②: 시민 경험 -->
+    <!-- 6. 시민 경험 -->
     <section id="findings-citizens" class="section section-alt page-section">
       <div class="inner">
         <header class="section-header">
@@ -568,7 +553,7 @@
       </div>
     </section>
 
-    <!-- 10. 시민을 위한 실천 가이드 -->
+    <!-- 10. 시민 실천 가이드 -->
     <section id="guide" class="section section-alt page-section">
       <div class="inner">
         <header class="section-header">
@@ -608,7 +593,7 @@
           <h2>다크패턴 방지 청원문 (초안)</h2>
         </header>
 
-        <article class="petition-card">
+        <article class="petition-card card">
           <p>
             우리는 매일같이 ‘동의합니다’ 버튼을 누르지만, 그 동의가 정말 우리가 이해하고 선택한 것인지 확신할 수 없습니다.
             우리는 기업이 설계한 다크패턴 UI와 읽기 어렵고 불공정한 개인정보 이용약관 속에서 우리의 데이터, 시간, 돈,
@@ -651,7 +636,7 @@
       </div>
     </section>
 
-    <!-- 12. 다크패턴 법적 고민 상담사 (ChatGPT 연동 예정 영역) -->
+    <!-- 12. 다크패턴 법적 고민 상담사 -->
     <section id="assistant" class="section section-alt page-section">
       <div class="inner">
         <header class="section-header">
@@ -740,7 +725,7 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="terms-title">
       <header class="modal-header">
         <h2 id="terms-title">이용약관</h2>
-        <button class="modal-close" data-close-terms>✕</button>
+        <button class="modal-close" data-close-terms aria-label="닫기">✕</button>
       </header>
 
       <div class="modal-body terms-scroll">
@@ -866,7 +851,7 @@
       const modal = document.getElementById("terms-modal");
       const openBtn = document.getElementById("open-terms");
       const agreeBtn = document.getElementById("agree-terms");
-      const closeBtns = modal ? modal.querySelectorAll("[data-close-terms]") : [];
+      const closeBtns = modal ? modal.querySelectorAll("[data-close-terms], .modal-close") : [];
 
       function openModal() {
         if (!modal) return;
@@ -897,26 +882,32 @@
         });
       });
 
-      // 동의하기 버튼
+      // 백드롭 클릭 시 닫기
+      if (modal) {
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      }
+
+      // 동의하기 버튼 (지금은 단순 닫기만, 매번 다시 표시)
       if (agreeBtn) {
         agreeBtn.addEventListener("click", function () {
-          localStorage.setItem("termsAgreed", "true");
           closeModal();
         });
       }
 
-      // 페이지 로드 시 자동으로 약관 띄우기
+      // ✅ 페이지 로드 시 무조건 자동으로 약관 띄우기 (매 방문마다)
       window.addEventListener("load", function () {
-        const agreed = localStorage.getItem("termsAgreed");
-        if (agreed === "true") return;
         setTimeout(openModal, 300);
       });
 
       /* ========================
-         2. 의사 페이지 전환 (SPA 느낌)
+         2. 섹션 전환 (SPA 느낌)
          ======================== */
       const sections = document.querySelectorAll(".page-section");
-      const navLinks = document.querySelectorAll(".site-nav a[data-target]");
+      const navLinks = document.querySelectorAll(".site-nav a[data-target], .hero-actions a[data-target]");
 
       function showSection(id) {
         sections.forEach(function (sec) {
@@ -926,16 +917,16 @@
             sec.classList.remove("is-active");
           }
         });
-        // 항상 상단으로
         window.scrollTo({ top: 0, behavior: "auto" });
       }
 
-      // 네비 클릭 시 스크롤 대신 섹션 전환
       navLinks.forEach(function (link) {
         link.addEventListener("click", function (e) {
-          e.preventDefault();
           const target = link.getAttribute("data-target");
-          if (target) showSection(target);
+          if (target) {
+            e.preventDefault();
+            showSection(target);
+          }
         });
       });
 
