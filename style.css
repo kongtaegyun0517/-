@@ -857,3 +857,120 @@ body {
   border-color: #fb7185;
   color: #fecaca;
 }
+/* ========== ASSISTANT (법적 고민 상담사) ========== */
+
+.assistant-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+  gap: 20px;
+}
+
+.assistant-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-log {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 14px;
+  background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  max-height: 280px;
+  overflow-y: auto;
+  font-size: 0.86rem;
+}
+
+.chat-log::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-log::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #22d3ee, #fb7185);
+  border-radius: 999px;
+}
+
+.chat-bubble {
+  padding: 8px 11px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  max-width: 100%;
+  word-break: keep-all;
+}
+
+.chat-bubble.bot {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(94, 234, 212, 0.5);
+  color: #e5e7eb;
+}
+
+.chat-bubble.user {
+  background: linear-gradient(135deg, #fb7185, #f97373);
+  color: #050712;
+  margin-left: auto;
+}
+
+.chat-input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.chat-input-row input {
+  flex: 1;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7ff;
+  padding: 8px 12px;
+  font-size: 0.84rem;
+  outline: none;
+}
+
+.chat-input-row input::placeholder {
+  color: #6b7280;
+}
+
+.chat-input-row button {
+  border-radius: 999px;
+  border: 1px solid #fb7185;
+  background: linear-gradient(135deg, #fb7185, #f97373);
+  color: #050712;
+  padding: 0 16px;
+  font-size: 0.84rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chat-input-row button:hover {
+  filter: brightness(1.05);
+}
+
+.chat-disclaimer {
+  margin-top: 10px;
+  font-size: 0.76rem;
+  color: #9ca3c7;
+}
+
+.assistant-side {
+  font-size: 0.86rem;
+}
+
+@media (max-width: 960px) {
+  .assistant-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+/* ========== PAGE-SECTION (의사 페이지 전환) ========== */
+
+.page-section {
+  display: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+}
+
+.page-section.is-active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
