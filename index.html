@@ -653,29 +653,55 @@
     </footer>
   </div>
 </div>
-  <script>
-  const modal = document.getElementById("terms-modal");
-  const openBtn = document.getElementById("open-terms");
-  const agreeBtn = document.getElementById("agree-terms");
-  const closeBtns = document.querySelectorAll("[data-close-terms]");
+ <script>
+  (function () {
+    const modal = document.getElementById("terms-modal");
+    if (!modal) return; // 안전장치
 
-  function openModal() {
-    modal.classList.add("is-open");
-    document.body.style.overflow = "hidden";
-  }
+    const openBtn = document.getElementById("open-terms");
+    const agreeBtn = document.getElementById("agree-terms");
+    const closeBtns = modal.querySelectorAll("[data-close-terms]");
 
-  function closeModal() {
-    modal.classList.remove("is-open");
-    document.body.style.overflow = "";
-  }
+    function openModal() {
+      modal.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+      modal.setAttribute("aria-hidden", "false");
+    }
 
-  openBtn.addEventListener("click", openModal);
-  closeBtns.forEach(btn => btn.addEventListener("click", closeModal));
+    function closeModal() {
+      modal.classList.remove("is-open");
+      document.body.style.overflow = "";
+      modal.setAttribute("aria-hidden", "true");
+    }
 
-  agreeBtn.addEventListener("click", () => {
-    localStorage.setItem("termsAgreed", "true");
-    closeModal();
-  });
+    // (선택) 버튼으로도 열 수 있게 – 있어도 되고 없어도 됨
+    if (openBtn) {
+      openBtn.addEventListener("click", openModal);
+    }
+
+    // 닫기 버튼들
+    closeBtns.forEach(function (btn) {
+      btn.addEventListener("click", closeModal);
+    });
+
+    // 동의하기 버튼
+    if (agreeBtn) {
+      agreeBtn.addEventListener("click", function () {
+        // 동의했음을 기록
+        localStorage.setItem("termsAgreed", "true");
+        closeModal();
+      });
+    }
+
+    // ✅ 여기 핵심: 페이지 들어오면 자동으로 약관 팝업 띄우기
+    window.addEventListener("load", function () {
+      const agreed = localStorage.getItem("termsAgreed");
+      // 만약 "항상 뜨게" 하고 싶으면 if 조건을 그냥 지우고 openModal()만 남겨
+      if (agreed !== "true") {
+        openModal();
+      }
+    });
+  })();
 </script>
 </body>
 </html>
