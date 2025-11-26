@@ -2,349 +2,634 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>다크패턴 피해사례 아카이브 & 청원</title>
+  <title>데이터와 약관, 이제는 공정하게</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="다크패턴 피해 사례 아카이브 & 청원 플랫폼" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- 헤더 & 네비게이션 -->
   <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">
-        데이터와 약관, 이제는 공정하게
+    <div class="inner">
+      <div class="logo-mark">
+        <span class="logo-dot"></span>
+        <span class="logo-text">Dark Pattern Archive</span>
       </div>
-      <nav class="nav">
+      <nav class="site-nav">
         <a href="#home">HOME</a>
-        <a href="#why">왜 다크패턴인가</a>
-        <a href="#cases">피해 사례 아카이브</a>
-        <a href="#field">약관·현장조사</a>
-        <a href="#network">인터뷰 & 네트워크</a>
-        <a href="#terms">다크패턴 없는 약관</a>
-        <a href="#petition">청원 & SDG</a>
+        <a href="#problem">문제 제기</a>
+        <a href="#project">프로젝트</a>
+        <a href="#patterns">다크패턴이란?</a>
+        <a href="#method">조사 설계</a>
+        <a href="#findings-cases">사례·규제</a>
+        <a href="#findings-citizens">시민 경험</a>
+        <a href="#solutions">해결 시도</a>
+        <a href="#law">법·제도</a>
+        <a href="#petition">청원</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HOME -->
+    <!-- HOME / HERO -->
     <section id="home" class="section hero">
-      <div class="container">
-        <p class="eyebrow">프로젝트 한눈에 보기</p>
-        <h1>데이터와 약관, 이제는 ‘공정하게’</h1>
-        <h2 class="subtitle">&lt;다크패턴 피해사례 아카이브&gt;</h2>
-
-        <p class="lead">
-          이 사이트는 <strong>다크패턴(유도 설계)</strong>과
-          <strong>불공정 개인정보 이용약관</strong>으로 인해 소비자가 겪은
-          실제 피해를 기록하고, 이를 바탕으로
-          <strong>제도 개선을 요구하는 온라인 청원 플랫폼</strong>입니다.
-        </p>
-
-        <div class="grid two-col">
-          <div>
-            <h3>프로젝트 소개</h3>
-            <p>
-              오늘날 우리는 앱을 설치하고, 서비스를 가입하고, 구독을 결제할 때마다
-              ‘동의합니다’ 버튼을 자동으로 누릅니다. 하지만 그 뒤에서는
-              복잡한 약관, 숨겨진 해지 버튼, 과도한 개인정보 수집 같은
-              다크패턴이 조용히 작동하며, 소비자의 선택권과 권리를
-              조금씩 갉아먹고 있습니다.
-            </p>
-          </div>
-          <div>
-            <h3>우리가 하려는 것</h3>
-            <ul>
-              <li>과거 다크패턴 사례와 피해자 이야기를 한곳에 모아 기록</li>
-              <li>시민이 직접 약관을 읽고 분석한 결과를 공유</li>
-              <li>전문가·기관과의 인터뷰로 제도적 해결 방향 모색</li>
-              <li>최종적으로 “다크패턴 금지와 데이터 공정성”을 요구하는 청원으로 연결</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="sdg-box">
-          <h3>SDG와의 연결</h3>
-          <p>
-            이 작업은 UN 지속가능발전목표(SDGs) 중
-            <strong>SDG 10.2·10.3·10.4 (불평등 감소)</strong>,
-            <strong>SDG 16.6·16.7·16.10 (책임 있는 제도·시민 참여·정보접근권)</strong>과
-            직접적으로 연결됩니다.
+      <div class="inner hero-grid">
+        <div class="hero-main">
+          <p class="eyebrow">GCP 세계시민 프로젝트 – 다크패턴 아카이브 & 청원</p>
+          <h1>데이터와 약관, 이제는<br><span class="accent">‘공정하게’</span></h1>
+          <p class="hero-subtitle">
+            이 사이트는 다크패턴(유도 설계)과 불공정 개인정보 이용약관으로 인해
+            소비자가 겪은 실제 피해를 기록하고,<br>
+            이를 바탕으로 제도 개선을 요구하는 온라인 청원 플랫폼입니다.
           </p>
-          <ul>
-            <li><strong>16.6 책임 있는 제도 구축</strong> – 기업과 정부의 투명한 데이터 이용 체계 요구</li>
-            <li><strong>16.10 정보 접근·권리 보호</strong> – 알 권리·열람권·삭제권·이의제기권을 보장하는 디지털 환경</li>
-          </ul>
+          <div class="hero-actions">
+            <a href="#petition" class="btn primary">다크패턴 방지 청원 보기</a>
+            <a href="#patterns" class="btn ghost">다크패턴이 뭔지부터 보기</a>
+          </div>
+          <div class="hero-tags">
+            <span class="tag">#darkpattern</span>
+            <span class="tag">#데이터공정성</span>
+            <span class="tag">#이용약관</span>
+            <span class="tag">#SDG10</span>
+            <span class="tag">#SDG16</span>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="stat-card">
+            <p class="stat-label">인기 앱 100개 중</p>
+            <p class="stat-number">97개</p>
+            <p class="stat-desc">최소 1개 이상 다크패턴 사용<br><span class="muted">– 한국소비자원 실태조사</span></p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">대표 피해</p>
+            <ul class="compact-list">
+              <li>모르는 사이에 자동결제 가입</li>
+              <li>해지 버튼이 보이지 않는 구독 서비스</li>
+              <li>무료 체험 뒤 예고 없는 유료 전환</li>
+              <li>과도한 개인정보 수집·제3자 제공</li>
+            </ul>
+          </div>
+          <div class="sdg-card">
+            <p class="sdg-label">SDG 프레임</p>
+            <p class="sdg-main">SDG 10 · SDG 16</p>
+            <p class="sdg-desc">
+              10.2·10.3·10.4 – 디지털 불평등 완화<br>
+              16.6·16.7·16.10 – 책임 있는 제도·시민 참여·정보접근권
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 1. 왜 다크패턴이 문제인가 -->
-    <section id="why" class="section">
-      <div class="container">
-        <h2>1. 왜 다크패턴이 문제인가</h2>
+    <!-- 1. 문제 제기 -->
+    <section id="problem" class="section">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">01</p>
+          <h2>문제 제기: 왜 다크패턴인가</h2>
+          <p class="section-kicker">다크패턴은 단순한 ‘불편함’이 아니라 <span class="accent">설계된 불평등</span>이다.</p>
+        </header>
 
-        <h3>1-1. 주제 선정 이유</h3>
-        <p>
-          우리 팀은 KT 해킹·무단 결제 사태 이후, 개인정보 이용 약관이
-          기업 중심으로 바뀌었다는 기사를 보면서 문제의식을 가졌습니다.
-          5,500명 이상 이용자의 정보가 유출된 뒤에야 사실을 인정하고,
-          사후 보상 방안을 논의한 구조였습니다.
-        </p>
-        <p>
-          해외에서는 WhatsApp이 페이스북(현 Meta)과의 데이터 공유 확대를
-          포함한 개인정보 방침 개정을 밀어붙이며 “동의하지 않으면 서비스 이용 제한”
-          구조를 만들었고, 그 결과 전 세계적인 반발과 규제 조사가 이어졌습니다.
-        </p>
-        <p class="highlight">
-          데이터는 개인이 제공하지만, 약관을 바꾸고 활용 범위를 정하는 권한은
-          기업에 집중되어 있습니다. 약관은 시간이 갈수록 기업에 유리하게 바뀌지만,
-          사용자는 이를 제대로 알지 못한 채 서비스를 계속 이용하게 됩니다.
-        </p>
-
-        <h3>1-2. 문제 정의</h3>
-        <div class="grid two-col">
-          <div>
-            <h4>개인의 입장</h4>
-            <ul>
-              <li>길고 어려운 문장, 기계적인 ‘동의’ 버튼</li>
-              <li>사실상 이해하지 못한 채 동의하도록 강제</li>
+        <div class="grid two">
+          <article class="card">
+            <h3>“동의합니다”라는 말 뒤에 숨은 것</h3>
+            <ul class="bullet">
+              <li>우리는 앱을 설치하고, 구독을 결제하고, 서비스를 탈퇴하는 과정에서 계속해서 “동의합니다”를 누른다.</li>
+              <li>하지만 그 선택은 진짜 ‘선택’이 아니다. 버튼은 숨겨져 있고, 해지는 복잡하며, 정보는 의도적으로 흐려진다.</li>
             </ul>
-          </div>
-          <div>
-            <h4>기업의 입장</h4>
-            <ul>
-              <li>일방적인 약관 수정으로 데이터 활용 범위 확대</li>
-              <li>개인 데이터로 큰 가치를 만들면서도 보상·선택권은 최소화</li>
-            </ul>
-          </div>
-        </div>
-
-        <p>
-          여기에 다크패턴이 결합되면, “거부” 버튼은 숨겨지고,
-          “자동결제 해지”는 복잡해지고, “개인정보 최소 제공” 옵션은
-          잘 보이지 않게 됩니다. 그 결과 정보와 수익은 기업에 집중되고,
-          개인은 불리한 계약 구조에 묶인 채 약관을 ‘통과의례’처럼 클릭하게 됩니다.
-        </p>
-
-        <p class="note">
-          이 구조를 바꾸지 않으면 SDG 10(불평등 감소), SDG 16(투명하고 책임 있는 제도)은
-          디지털 영역에서 실현되기 어렵습니다.
-        </p>
-      </div>
-    </section>
-
-    <!-- 2. 피해 사례 아카이브 -->
-    <section id="cases" class="section section-alt">
-      <div class="container">
-        <h2>2. 피해 사례 아카이브</h2>
-        <p class="section-desc">
-          다크패턴으로 인해 소비자가 실제로 손해를 본 사례를
-          분야별(금융 / SNS / 공공앱 / 게임), 지역별(국내 / 해외)로 정리합니다.
-        </p>
-
-        <h3>정리 기준</h3>
-        <ul>
-          <li>어떤 약관·UI였는지</li>
-          <li>어떤 다크패턴 유형인지</li>
-          <li>어떤 피해가 발생했는지</li>
-        </ul>
-
-        <div class="case-grid">
-          <article class="case-card">
-            <h4>[해외] 아마존 프라임 ‘해지 미로’ 사건</h4>
-            <p class="tag">Subscription Trap / Obstruction</p>
-            <p>
-              가입은 클릭 몇 번이면 끝나지만, 해지는 복잡한 ‘일리아드 플로우’ 속에 숨겨져 있었습니다.
-              FTC는 “가입은 쉽게, 해지는 어렵게” 설계된 다크패턴으로 소비자를 자동갱신에
-              묶어놓았다고 소송을 제기했습니다.
+            <p class="highlight-quote">
+              가입은 빠르고,<br>
+              해지는 미로처럼 설계된다.
             </p>
           </article>
 
-          <article class="case-card">
-            <h4>[해외] 포트나이트 – 아동 개인정보 & 오결제 유도</h4>
-            <p class="tag">Privacy Zuckering / Default Consent / Interface Interference</p>
-            <p>
-              아동·청소년의 개인정보를 부모 동의 없이 수집하고,
-              혼동되는 결제 UI를 통해 원치 않는 인게임 결제를 유도해
-              5억 2천만 달러 합의에 이르렀습니다.
-            </p>
-          </article>
-
-          <article class="case-card">
-            <h4>[국내] 확률형 아이템 – 비용 은닉 / Pay-to-Win</h4>
-            <p class="tag">Obfuscation / 인위적 성장 방해</p>
-            <p>
-              극저확률 아이템의 표기 뒤에 숨은 실제 평균 비용을 가려,
-              생활비·대출까지 투입되는 과도한 과금을 유도하는 구조입니다.
-            </p>
-          </article>
-
-          <article class="case-card">
-            <h4>[해외] WhatsApp 개인정보 방침 개정</h4>
-            <p class="tag">Forced Action / Agree or Leave</p>
-            <p>
-              “새 약관에 동의하지 않으면 서비스 이용 제한” 구조로,
-              서비스 포기 vs 데이터 포기 중 하나를 강요했습니다.
-            </p>
-          </article>
-
-          <article class="case-card">
-            <h4>[국내] 통신사 개인정보 유출과 책임 회피</h4>
-            <p class="tag">Responsibility Shifting / Limited Redress</p>
-            <p>
-              반복되는 대규모 유출에도 약관을 통해 책임을 이용자 부주의로 돌리고,
-              제한적 보상만 제공하는 구조가 지속되고 있습니다.
-            </p>
-          </article>
-        </div>
-
-        <div class="note">
-          한국소비자원 조사에 따르면 인기 앱 100개 중 97개에서 다크패턴이 발견되었고,
-          공정위는 구독함정·허위 할인·정보 숨김 등 다크패턴을 법에 명시해
-          2025년부터 규제를 강화하고 있습니다.
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. 약관·현장조사 -->
-    <section id="field" class="section">
-      <div class="container">
-        <h2>3. 약관·현장조사</h2>
-        <p class="section-desc">
-          “우리가 직접 확인한 것들” – 실제 약관, UI, 설문조사를 모아 정리합니다.
-        </p>
-
-        <h3>3-1. 조사 방법</h3>
-        <div class="grid three-col">
-          <div>
-            <h4>직접 확인</h4>
-            <ul>
-              <li>주요 앱·웹서비스 약관 전문 읽기</li>
-              <li>이해하기 어려운 문장 표시</li>
-              <li>거부 버튼·선택 동의 위치 기록</li>
+          <article class="card">
+            <h3>현실 사례가 보여주는 구조</h3>
+            <ul class="bullet">
+              <li><strong>KT 해킹·무단결제 사태</strong> – 책임은 이용자에게, 권한은 기업에게.</li>
+              <li><strong>WhatsApp 약관 개정</strong> – “동의하지 않으면 서비스 이용 제한”. Agree or Leave 구조.</li>
+              <li>SK·KT 등 통신사 개인정보 유출 – 약관 속 책임 전가, 제한적인 보상.</li>
             </ul>
-          </div>
-          <div>
-            <h4>찾아보기</h4>
-            <ul>
-              <li>뉴스·보고서·논문 조사</li>
-              <li>소송·제재 사례 정리</li>
-              <li>공정위·금융위·PIPC 규제 변화 추적</li>
+            <p class="summary">
+              다크패턴은 이용자의 권리를 설계 단계에서부터 약화시키는
+              <strong>구조적 문제</strong>다.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 프로젝트 개요 & SDG -->
+    <section id="project" class="section section-alt">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">02</p>
+          <h2>프로젝트 개요 & SDG 프레임</h2>
+        </header>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>프로젝트 목표</h3>
+            <ul class="bullet">
+              <li>다크패턴과 불공정 약관으로 인한 <strong>피해를 기록</strong>한다.</li>
+              <li>시민이 직접 약관과 UI를 <strong>읽고 분석</strong>한다.</li>
+              <li>전문가·기관과 연결해 <strong>제도 개선 방향</strong>을 제안한다.</li>
+              <li>최종적으로 <strong>“다크패턴 금지와 데이터 공정성” 청원</strong>으로 이어지게 한다.</li>
             </ul>
-          </div>
-          <div>
-            <h4>물어보기</h4>
-            <ul>
-              <li>친구·가족·동료 대상 설문조사</li>
-              <li>약관 읽기 경험·해지 포기 경험</li>
-              <li>데이터 활용에 대한 인식 조사</li>
+            <p class="summary">
+              데이터는 기업의 자원이 아니라 <strong>시민의 권리</strong>라는 관점에서 출발한다.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>사이트 구조 (Information Architecture)</h3>
+            <ol class="numbered">
+              <li>문제 정의 – 왜 다크패턴인가</li>
+              <li>피해 사례 아카이브 – 국내·해외 / 금융·SNS·공공앱·게임</li>
+              <li>약관·현장조사 – 직접 읽고, 찾아보고, 물어본 기록</li>
+              <li>전문가·기관 인터뷰 – 네트워크 & 거버넌스</li>
+              <li>다크패턴 없는 이용약관 – 사이트 자체 약관 제안</li>
+              <li>다크패턴 방지 청원문 – 온라인 서명 페이지</li>
+            </ol>
+            <div class="pill-row">
+              <span class="pill">SDG 10 – 불평등 감소</span>
+              <span class="pill">SDG 16 – 투명한 제도</span>
+              <span class="pill">시민 중심 조사</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 다크패턴이란? / 유형 -->
+    <section id="patterns" class="section">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">03</p>
+          <h2>다크패턴이란 무엇인가</h2>
+          <p class="section-kicker">
+            사용자의 착각·부주의·행동 편향을 악용해 <span class="accent">원하지 않는 선택</span>을 하게 만드는 조작적 UI 디자인.
+          </p>
+        </header>
+
+        <div class="grid three pattern-grid">
+          <article class="card mini">
+            <h3>정의</h3>
+            <p>
+              단순히 불편한 디자인이 아니라, 기업이 이익을 얻기 위해
+              사용자의 자율적 판단을 약화시키도록 <strong>의도적으로 설계된 인터페이스</strong>.
+            </p>
+            <p class="meta">
+              핵심 기준은 <strong>의도(intent)</strong> – 실수인지, 전략인지.
+            </p>
+          </article>
+
+          <article class="card mini">
+            <h3>작동 방식</h3>
+            <ul class="bullet small">
+              <li><strong>선택 구조 조작</strong> – 유리한 선택지만 강조, 불리한 선택지는 숨김.</li>
+              <li><strong>정보 흐름 왜곡</strong> – 핵심 정보는 작게·늦게, 긍정 정보만 크게.</li>
+              <li><strong>자율성 침해</strong> – 사용자가 스스로 선택한다고 믿게 만들지만, 실제로는 선택권 조작.</li>
             </ul>
-          </div>
+          </article>
+
+          <article class="card mini">
+            <h3>대표 유형 (DPAF 기준)</h3>
+            <ul class="bullet small">
+              <li>편취형 Sneaking – 숨은 비용, 몰래 장바구니 담기, 숨은 구독.</li>
+              <li>방해형 Obstruction – 해지·탈퇴 미로, 가격 비교 방해.</li>
+              <li>압박형 Urgency/Scarcity – 가짜 타이머, “남은 객실 1개”.</li>
+              <li>강요형 Forced Action – 필수 아닌 개인정보를 사실상 강제.</li>
+              <li>오도형 Interface Interference – 동의 버튼만 크게, 거부는 숨김.</li>
+            </ul>
+          </article>
         </div>
 
-        <h3>3-2. 시민 설문 (예시)</h3>
-        <ul>
-          <li>“최근 6개월 동안 약관을 끝까지 읽어본 적이 있나요?”</li>
-          <li>“선택 동의 항목을 해제(거부)해본 경험이 있나요?”</li>
-          <li>“자동결제를 해지하다가 포기한 경험이 있나요?”</li>
-          <li>“원하지 않는 결제·동의를 하게 됐을 때 감정은 어땠나요?”</li>
-        </ul>
+        <details class="details">
+          <summary>세부 유형 & 피해 예시 더 보기</summary>
+          <div class="details-body">
+            <div class="grid two">
+              <div>
+                <h4>주요 세부 패턴</h4>
+                <ul class="bullet small">
+                  <li>Hidden Costs – 마지막 단계에 배송비·수수료 추가.</li>
+                  <li>Sneak into Basket – 동의 없이 보험·부가상품 자동 추가.</li>
+                  <li>Roach Motel – 가입은 원클릭, 해지는 전화·팩스·복잡 절차.</li>
+                  <li>Confirmshaming – “아니요, 혜택을 포기하겠습니다” 같은 죄책감 버튼.</li>
+                  <li>Privacy Zuckering – 과도한 개인정보 제공을 당연한 것처럼 유도.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>왜 규제 사각지대인가</h4>
+                <ul class="bullet small">
+                  <li>UI는 빠르게 바뀌고, 스크린샷을 남기지 않으면 증거가 사라진다.</li>
+                  <li>현존 자동 탐지 기술은 다크패턴의 절반 이상을 식별하지 못한다.</li>
+                  <li>사용자가 피해를 “피해”로 인지하지 못하고 넘어가는 경우가 많다.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
       </div>
     </section>
 
-    <!-- 4. 인터뷰 & 네트워크 -->
-    <section id="network" class="section section-alt">
-      <div class="container">
-        <h2>4. 인터뷰 & 전문가/기관 네트워크</h2>
-        <p class="section-desc">
-          이 페이지는 프로젝트와 연계 가능한 기관·전문가 풀과 인터뷰 진행 상황을 정리하는 공간입니다.
-        </p>
+    <!-- 4. 조사 설계 -->
+    <section id="method" class="section section-alt">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">04</p>
+          <h2>조사 설계: 어떻게 파봤는가</h2>
+          <p class="section-kicker">
+            책상 앞에서만 논의하지 않고, <span class="accent">직접 보고·읽고·물어본</span> 시민 중심 조사.
+          </p>
+        </header>
 
-        <h3>4-1. 국내 공공·시민단체</h3>
-        <ul>
-          <li>한국소비자원 – 소비자 피해구제, 이용약관 조사, 불공정거래 심사</li>
-          <li>개인정보보호위원회(PIPC) – 개인정보 수집·이용·제3자 제공 규제</li>
-          <li>소비자시민모임·한국소비자연맹 – 금융·플랫폼 피해 민원</li>
-        </ul>
+        <div class="grid two">
+          <article class="card">
+            <h3>① 피해 사례 분석 프레임</h3>
+            <ul class="bullet">
+              <li>분야: 금융 / 게임 / SNS / 공공앱</li>
+              <li>지역: 국내 / 해외</li>
+              <li>관점:
+                <ul class="nested">
+                  <li>어떤 UI·약관 설계였는지</li>
+                  <li>어떤 다크패턴 유형인지</li>
+                  <li>어떤 금전·시간·데이터 피해가 발생했는지</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
 
-        <h3>4-2. 학계·전문가</h3>
-        <p>각 교수·연구자의 연구 내용을 요약하고, 인터뷰 요청·진행 상황을 타임라인으로 정리합니다.</p>
-
-        <h3>4-3. 글로벌 거버넌스 좋은 예시</h3>
-        <ul>
-          <li>IMF – 개인정보 처리 방식과 권리 요청 양식을 명확히 공개</li>
-          <li>KOSIS – 수집 데이터·통계 구조·제공 시스템을 투명하게 안내</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 5. 다크패턴 없는 이용약관 예시 -->
-    <section id="terms" class="section">
-      <div class="container">
-        <h2>5. 다크패턴 없는 ‘이용약관’ 예시</h2>
-        <p class="section-desc">
-          “이용약관을 이렇게 쓰면, 최소한 다크패턴은 아니다”라는 기준을 제안합니다.
-        </p>
-
-        <h3>5-1. 한눈에 보는 약관 요약</h3>
-        <ul>
-          <li>우리는 최소한의 개인정보만 수집합니다.</li>
-          <li>당신의 데이터는 당신의 것입니다.</li>
-          <li>언제든 열람·정정·삭제를 요청할 수 있습니다.</li>
-          <li>동의와 거부는 같은 크기·위치에서 선택할 수 있습니다.</li>
-          <li>선택 동의는 기본값이 “동의 안 함”입니다.</li>
-          <li>자동결제·유료 서비스는 명확한 안내와 쉬운 해지 절차를 보장합니다.</li>
-        </ul>
-
-        <h3>5-2. 이용약관 본문(요약 버전)</h3>
-        <p>
-          약관 전체 전문은 아래 링크(또는 별도 페이지)에서 확인할 수 있도록 하고,
-          이곳에는 핵심 조항과 원칙을 요약해 배치합니다.
-        </p>
-      </div>
-    </section>
-
-    <!-- 6. 청원 & SDG -->
-    <section id="petition" class="section section-alt">
-      <div class="container">
-        <h2>6. 다크패턴 방지 청원 & SDG</h2>
-        <p class="section-desc">
-          여기서 우리는 무엇을 바꾸고 싶은지 공식적으로 선언하고, 서명을 모읍니다.
-        </p>
-
-        <h3>6-1. 청원 핵심 요구</h3>
-        <ul>
-          <li>동의와 거부의 동등성 보장</li>
-          <li>자동결제·구독 해지 절차 간편화</li>
-          <li>데이터 사용 이력 통지제 도입</li>
-          <li>약관 변경 시 실질적 선택권 보장</li>
-          <li>다크패턴 전면 규제 및 강력한 집행</li>
-        </ul>
-
-        <h3>7. 마무리 – 글로벌 시티즌 & SDG</h3>
-        <p>
-          아마존 프라임, 포트나이트, WhatsApp, SK·KT 통신사 사례는
-          국가와 기업이 달라도 패턴은 비슷하다는 것을 보여줍니다.
-          가입은 쉽고, 해지는 어렵고, 정보는 숨겨지고, 동의는 강요됩니다.
-        </p>
-        <p>
-          우리는 이를 SDG 10(불평등 감소), SDG 16(투명하고 책임 있는 제도)의 관점에서 다시 읽어내고,
-          시민이 직접 조사·기록·제안하는 방식으로
-          디지털 시대의 새로운 ‘공정무역’, 즉 데이터 공정무역 문화를 실험하고자 합니다.
-        </p>
-
-        <!-- 나중에 실제 폼/버튼 연동 -->
-        <div class="petition-box">
-          <p>다크패턴 없는 디지털 사회를 위해 이 청원에 동의하신다면, 서명해주세요.</p>
-          <button disabled>온라인 서명 (추후 오픈 예정)</button>
+          <article class="card">
+            <h3>② 약관·현장조사</h3>
+            <ul class="bullet">
+              <li>주요 앱·웹서비스의 이용약관, 설정 화면, 해지 절차 직접 캡처.</li>
+              <li>선택 동의·기본값·해지 난이도 등을 비교표로 정리.</li>
+              <li>뉴스·보고서·판결문·공정위·금융위·PIPC 자료 병행 검토.</li>
+            </ul>
+          </article>
         </div>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>③ 시민 설문 – 감정 & 통제감</h3>
+            <ul class="bullet">
+              <li>“언제 이상하다고 느꼈는가?” – 찝찝함·속은 느낌·통제감 상실.</li>
+              <li>즉각 감정: 불쾌·당황·무력감·체념.</li>
+              <li>이후 감정: 불신·회피·피로감, “원래 그렇다”는 체념.</li>
+              <li>행동 변화: 약관 더 읽기, 신뢰 기업으로 이동, 일부는 온라인 이용 축소.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>④ 전문가·기관 네트워크</h3>
+            <ul class="bullet">
+              <li>한국소비자원, 개인정보보호위원회(PIPC), 소비자시민단체.</li>
+              <li>정보보호·데이터윤리·디지털 인터페이스 연구자 인터뷰 준비.</li>
+              <li>해외 거버넌스: IMF, KOSIS 등 투명한 데이터 처리 사례 벤치마킹.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 중간 결과 ①: 사례 & 규제 -->
+    <section id="findings-cases" class="section">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">05</p>
+          <h2>중간 결과 ①: 피해 사례 & 규제 흐름</h2>
+        </header>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>해외 주요 사례</h3>
+            <ul class="bullet">
+              <li><strong>아마존 프라임</strong> – 해지 미로(Subscription Trap, Obstruction).<br>가입은 원클릭, 해지는 수많은 단계.</li>
+              <li><strong>포트나이트</strong> – 아동 개인정보 수집 & 오결제 유도(Privacy Zuckering, Interface Interference). 수천억 원 규모 합의.</li>
+              <li><strong>WhatsApp</strong> – “Agree or Leave” 약관 구조. 동의하지 않으면 사실상 이용 불가.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>국내 주요 사례</h3>
+            <ul class="bullet">
+              <li><strong>확률형 아이템</strong> – 극단적으로 낮은 확률, 실제 필요 비용은 숨기는 구조.</li>
+              <li><strong>통신사 약관</strong> – “회원의 부주의로 인한 피해는 책임 없음” 등 책임 전가 조항.</li>
+              <li><strong>금융 앱</strong> – “숨은 돈 찾아드릴까요?”라는 문구 뒤에 마이데이터·마케팅 동의 결합.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>규제 흐름 – 한국</h3>
+            <ul class="bullet">
+              <li>한국소비자원: 인기 앱 100개 중 97개에서 다크패턴 발견.</li>
+              <li>공정위: 전자상거래법 개정, 6종 다크패턴(숨은 갱신·사전선택·취소방해·반복 간섭 등) 명시.</li>
+              <li>2025년 2월부터 신규 다크패턴 유형에 대한 제재 시행.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>규제 흐름 – 해외</h3>
+            <ul class="bullet">
+              <li>미국 FTC – 포트나이트, 아마존, Credit Karma 등 대규모 환불 & 과징금.</li>
+              <li>EU DSA 제25조 – “사용자 자율성 침해 인터페이스” 전면 금지.</li>
+              <li>GDPR – 금전적 피해가 없어도 정신적 피해에 대한 배상 인정.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="section-kicker centered">
+          <strong>요약</strong> – 국가와 기업은 달라도 패턴은 같다.<br>
+          <span class="accent">숨기고, 어렵게 하고, 기업이 이익을 가져가며, 위험과 피해는 개인이 떠안는다.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. 중간 결과 ②: 시민 경험 -->
+    <section id="findings-citizens" class="section section-alt">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">06</p>
+          <h2>중간 결과 ②: 시민 경험 & 감정 데이터</h2>
+        </header>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>“이상했다”는 순간들</h3>
+            <ul class="bullet">
+              <li>‘동의 안함’ 버튼이 작고 흐릿하게 숨겨져 있을 때.</li>
+              <li>자동결제 해지가 수십 단계로 이어질 때.</li>
+              <li>광고·개인정보 공개·마케팅 수신이 <strong>기본값 ON</strong>일 때.</li>
+            </ul>
+
+            <h3>감정 반응</h3>
+            <ul class="bullet">
+              <li>즉각: 불쾌감, 당황, 속았다는 느낌, 무력감, 체념.</li>
+              <li>시간이 지난 뒤: 불신, 피로감, 회피, “원래 그런가 보다”라는 학습된 체념.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>선택권·통제감 인식</h3>
+            <ul class="bullet">
+              <li>“선택이 존중되지 않았다”, “선택권이 없었다”고 답한 응답 다수.</li>
+              <li>“내가 시스템을 조작한 게 아니라, 시스템이 나를 조종했다”는 서술 응답.</li>
+            </ul>
+
+            <h3>행동 변화</h3>
+            <ul class="bullet">
+              <li>약관을 더 신중히 읽거나, 자동결제 여부를 반드시 확인.</li>
+              <li>신뢰하는 기업·서비스만 선별적으로 이용.</li>
+              <li>일부는 온라인 서비스 사용 자체를 줄이는 방향으로 이동.</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="section-kicker centered">
+          <strong>결론</strong> – 다크패턴은 UI 문제가 아니라 <span class="accent">감정·행동·신뢰를 무너뜨리는 인권·사회 문제</span>다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. 해결 시도 & 다음 단계 -->
+    <section id="solutions" class="section">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">07</p>
+          <h2>해결 시도 & 다음 단계</h2>
+        </header>
+
+        <div class="grid three">
+          <article class="card mini">
+            <h3>① 다크패턴 없는 이용약관 제안</h3>
+            <ul class="bullet small">
+              <li>최소한의 개인정보만 수집.</li>
+              <li><strong>기본값 OFF</strong> – 마케팅 수신·제3자 제공은 미동의 상태에서 시작.</li>
+              <li>해지는 가입보다 적거나 같은 단계 수.</li>
+              <li>약관 변경 시 비교표 + 이유 설명 필수.</li>
+              <li>유료·정기 과금은 별도 화면에서 재확인.</li>
+            </ul>
+          </article>
+
+          <article class="card mini">
+            <h3>② 청원 핵심 요구</h3>
+            <ul class="bullet small">
+              <li>동의·거부 버튼의 크기·위치·단계수 동등성.</li>
+              <li>구독·자동결제 해지 절차 간소화 & 해지 미로 금지.</li>
+              <li>데이터 사용 이력 정기 통지 제도 도입.</li>
+              <li>불리한 약관 변경 시, 기존 조건 유지·데이터 내보내기·탈퇴 선택권 보장.</li>
+              <li>다크패턴 전면 규제 및 실효적 제재.</li>
+            </ul>
+          </article>
+
+          <article class="card mini">
+            <h3>③ 다음 단계</h3>
+            <ul class="bullet small">
+              <li>피해 사례·화면 캡처 아카이브 확장.</li>
+              <li>전문가·기관 인터뷰 본격 진행.</li>
+              <li>법·제도 비교, 시각화, 교육 자료 제작.</li>
+              <li>최종 웹사이트 & 온라인 청원 페이지 공개.</li>
+            </ul>
+          </article>
+        </div>
+
+        <details class="details">
+          <summary>사이트 자체 이용약관 예시(요약) 보기</summary>
+          <div class="details-body">
+            <div class="grid two">
+              <div>
+                <h4>핵심 원칙</h4>
+                <ul class="bullet small">
+                  <li>필수 정보: 이메일, 비밀번호 정도로 최소화.</li>
+                  <li>선택 정보 미제공 시 서비스 이용 제한 없음.</li>
+                  <li>개인정보 판매·광고 목적으로의 제3자 제공 없음.</li>
+                  <li>쿠키는 통계·품질 개선 목적의 최소 사용.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>이용자의 권리</h4>
+                <ul class="bullet small">
+                  <li>언제든 열람·정정·삭제 요청 가능.</li>
+                  <li>약관이 불리하게 바뀔 경우, 계정 삭제 및 데이터 내보내기 권리 보장.</li>
+                  <li>유료 서비스 도입 시, 마지막 화면에서 가격·기간·해지 방법 재확인.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8. 법·제도 비교 -->
+    <section id="law" class="section section-alt">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">08</p>
+          <h2>법·제도: 한국 vs 미국 vs EU</h2>
+        </header>
+
+        <div class="grid three law-grid">
+          <article class="card mini">
+            <h3>대한민국</h3>
+            <ul class="bullet small">
+              <li>전자상거래법 – 청약철회(7일), 숨은 갱신·사전선택 등 6종 다크패턴 금지.</li>
+              <li>개인정보보호법 – 동의 없는 수집 시 손해배상, 법정 손해배상 상한 300만 원.</li>
+              <li>표시광고법 – 거짓·기만 광고에 대한 손해배상 및 과징금.</li>
+            </ul>
+            <p class="meta">전보적(메꾸기) 배상 중심, 법적 한도가 낮고 입증 책임이 소비자에게 크게 쏠려 있다.</p>
+          </article>
+
+          <article class="card mini">
+            <h3>미국</h3>
+            <ul class="bullet small">
+              <li>FTC Act – 불공정·기만 행위 금지, 부당 이득 환수(전액 환불) 가능.</li>
+              <li>CCPA·BIPA – 데이터 주권, 위반 건당 수십만 원 수준의 배상.</li>
+              <li>집단소송·징벌적 배상으로 실제 수령액이 큰 편.</li>
+            </ul>
+            <p class="meta">“기만 행위 자체”를 강하게 제재, 데이터 가치를 높게 평가.</p>
+          </article>
+
+          <article class="card mini">
+            <h3>EU</h3>
+            <ul class="bullet small">
+              <li>DSA 제25조 – 다크패턴 인터페이스 직접 금지.</li>
+              <li>GDPR 제82조 – 비물질적 손해(정신적 고통)에 대한 배상 인정.</li>
+              <li>UCPD – 공격적 상업 관행으로 맺은 계약은 무효.</li>
+            </ul>
+            <p class="meta">“자유로운 의사결정 방해” 자체를 원칙적으로 문제 삼는 접근.</p>
+          </article>
+        </div>
+
+        <p class="section-kicker centered">
+          <strong>비교</strong> – 미국은 <strong>강한 창</strong>, 한국은 <strong>무딘 방패</strong>에 가깝다.<br>
+          한국에서도 데이터 가치와 피해를 제대로 인정하는 방향으로의 전환이 필요하다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 9. 핵심 분야: 금융 · SNS -->
+    <section id="domains" class="section">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">09</p>
+          <h2>핵심 분야: 금융 · SNS</h2>
+        </header>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>금융 다크패턴 – 돈과 데이터가 동시에 묶인다</h3>
+            <ul class="bullet">
+              <li>“숨은 돈 찾아드릴까요?” – 마이데이터·마케팅 동의로 이어지는 팝업.</li>
+              <li>무료 체험 → 고지 부족한 자동 유료 전환.</li>
+              <li>BNPL(선구매·후지불) – 실제 부담액·연체 위험을 희미하게 만드는 UI.</li>
+              <li>보험·대출 – “수수료 없음”이라 하면서 실제론 숨겨진 비용 공제.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>SNS 다크패턴 – 시간과 주의(Attention)를 빨아들이는 설계</h3>
+            <ul class="bullet">
+              <li>로그아웃 버튼·개인정보 설정을 점점 더 깊이 숨기는 흐름.</li>
+              <li>친절해 보이지만 모든 옵션을 보여주지 않는 Privacy Checkup.</li>
+              <li>무한 스크롤, 알림, 엔터테인먼트 피드로 인한 계획보다 긴 사용 시간.</li>
+              <li>대부분 로그아웃을 거의 하지 않는다는 설문 결과.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. 시민을 위한 실천 가이드 -->
+    <section id="guide" class="section section-alt">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">10</p>
+          <h2>시민 실천 가이드: 지금 당장 할 수 있는 것</h2>
+        </header>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>결제 직전 체크리스트</h3>
+            <ul class="bullet">
+              <li>첫 화면 가격 vs 최종 결제 금액이 달라지지 않았는지 확인.</li>
+              <li>과도하게 크고 화려한 버튼 말고, 작은 회색 글씨(닫기·건너뛰기)를 함께 확인.</li>
+              <li>무료 체험 뒤 자동결제가 아닌지, 해지 기한이 언제인지 확인.</li>
+              <li>이상한 UI를 발견하면 즉시 <strong>스크린샷·녹화</strong>.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>피해 발생 후 대응</h3>
+            <ul class="bullet">
+              <li>전자상거래법 청약철회 – 단순 변심 7일, 기만 인지 후 30일 내 환불 요구.</li>
+              <li>1372 소비자상담센터, 콘텐츠분쟁조정위원회, 카드사 챠지백 제도 활용.</li>
+              <li>동일 피해자가 많다면 집단분쟁조정·공정위 신고·소액심판 고려.</li>
+              <li>약관·화면 캡처·결제 내역 등 증거를 체계적으로 보관.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. 청원문 -->
+    <section id="petition" class="section section-petition">
+      <div class="inner">
+        <header class="section-header">
+          <p class="eyebrow">11</p>
+          <h2>다크패턴 방지 청원문 (초안)</h2>
+        </header>
+
+        <article class="petition-card">
+          <p>
+            우리는 매일같이 ‘동의합니다’ 버튼을 누르지만, 그 동의가 정말 우리가 이해하고 선택한 것인지 확신할 수 없습니다.
+            우리는 기업이 설계한 다크패턴 UI와 읽기 어렵고 불공정한 개인정보 이용약관 속에서 우리의 데이터, 시간, 돈,
+            그리고 권리를 조금씩 잃어왔습니다.
+          </p>
+
+          <h3>우리는 다음을 요구합니다.</h3>
+          <ol class="numbered tight">
+            <li><strong>동의와 거부의 동등성 보장</strong><br>
+              – 개인정보·구독·광고 동의 화면에서 “동의”와 “거부” 버튼을 같은 크기·위치·단계 수로 제공할 것.
+            </li>
+            <li><strong>자동결제·구독 해지의 간편화</strong><br>
+              – 가입보다 어려운 해지 절차(Subscription Trap)를 금지하고, 최소한 가입과 같은 수준의 클릭 수·단계 수로 해지가 가능할 것.
+            </li>
+            <li><strong>데이터 사용 이력 통지제 도입</strong><br>
+              – 내 데이터가 어느 기업, 어떤 제3자에게, 어떤 목적으로 제공·활용되고 있는지 주기적으로 통지하는 제도 마련.
+            </li>
+            <li><strong>약관 변경 시 실질적 선택권 보장</strong><br>
+              – 불리한 약관 변경 시 “기존 조건 일정 기간 유지”와 “데이터 다운로드 후 탈퇴”를 선택할 수 있는 장치 마련.
+            </li>
+            <li><strong>다크패턴 전면 규제와 집행 강화</strong><br>
+              – 공정위·금융위·PIPC 등 규제기관이 다크패턴 유형을 명확히 정하고, 위반 시 실효적인 제재를 가할 것.
+            </li>
+          </ol>
+
+          <p class="summary">
+            우리는 단지 ‘서비스 이용자’가 아니라, 데이터를 제공하는 시민이며 권리의 주체입니다.<br>
+            우리는 오늘, 다크패턴 없는 디지털 사회를 위해 이 선언에 서명합니다.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary wide">청원에 서명할 수 있는 페이지로 이동 (준비 중)</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 다크패턴 아카이브 & 청원 프로젝트 – GCP 세계시민</p>
+    <div class="inner footer-grid">
+      <div>
+        <p class="eyebrow">Dark Pattern Archive & Petition</p>
+        <p class="footer-main">데이터 공정성을 시민의 손으로.</p>
+      </div>
+      <div class="footer-meta">
+        <p>본 사이트는 교육·연구 목적의 프로젝트 초안입니다. 실제 제도 개선과 연결되기 위해서는 법학·정책·디자인 분야의
+          협력이 추가로 필요합니다.</p>
+      </div>
     </div>
   </footer>
 </body>
