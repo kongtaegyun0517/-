@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <button id="open-terms" class="terms-trigger">
+  이용약관 보기
+</button>
   <meta charset="UTF-8" />
   <title>데이터와 약관, 이제는 공정하게</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -632,5 +635,23 @@
       </div>
     </div>
   </footer>
+<!-- 이용약관 팝업 -->
+<div class="modal-backdrop" id="terms-modal" aria-hidden="true">
+  <div class="modal">
+    <header class="modal-header">
+      <h2>이용약관</h2>
+      <button class="modal-close" data-close-terms>✕</button>
+    </header>
+
+    <div class="modal-body terms-scroll">
+      <!-- 여기 안에 네가 만든 이용약관 텍스트 통째로 복붙하면 됨 -->
+    </div>
+
+    <footer class="modal-footer">
+      <button class="btn-outline" data-close-terms>나중에</button>
+      <button class="btn-primary" id="agree-terms">동의하기</button>
+    </footer>
+  </div>
+</div>
 </body>
 </html>
