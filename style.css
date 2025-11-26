@@ -30,6 +30,7 @@ body {
   margin: 0;
   padding: 0;
   background: radial-gradient(circle at top, #101729 0, #05070b 55%);
+  background-color: #05070b;
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -96,6 +97,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   padding: 14px 20px;
 }
 
@@ -580,6 +582,7 @@ body {
     transform: none;
   }
 }
+
 /* ========== TERMS MODAL ========== */
 
 .modal-backdrop {
@@ -857,6 +860,7 @@ body {
   border-color: #fb7185;
   color: #fecaca;
 }
+
 /* ========== ASSISTANT (법적 고민 상담사) ========== */
 
 .assistant-grid {
@@ -960,6 +964,7 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
 /* ========== PAGE-SECTION (의사 페이지 전환) ========== */
 
 .page-section {
