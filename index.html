@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <button id="open-terms" class="terms-trigger">
-  이용약관 보기
-</button>
-  <meta charset="UTF-8" />
-  <title>데이터와 약관, 이제는 공정하게</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="다크패턴 피해 사례 아카이브 & 청원 플랫폼" />
-  <link rel="stylesheet" href="style.css" />
-</head>
 <body>
   <header class="site-header">
-    <div class="inner">
-      <div class="logo-mark">
-        <span class="logo-dot"></span>
-        <span class="logo-text">Dark Pattern Archive</span>
-      </div>
-      <nav class="site-nav">
-        <a href="#home">HOME</a>
-        <a href="#problem">문제 제기</a>
-        <a href="#project">프로젝트</a>
-        <a href="#patterns">다크패턴이란?</a>
-        <a href="#method">조사 설계</a>
-        <a href="#findings-cases">사례·규제</a>
-        <a href="#findings-citizens">시민 경험</a>
-        <a href="#solutions">해결 시도</a>
-        <a href="#law">법·제도</a>
-        <a href="#petition">청원</a>
-      </nav>
+  <div class="inner">
+    <div class="logo-mark">
+      <span class="logo-dot"></span>
+      <span class="logo-text">Dark Pattern Archive</span>
     </div>
-  </header>
+
+    <nav class="site-nav">
+      <a href="#home" data-target="home">HOME</a>
+      <a href="#problem" data-target="problem">문제 제기</a>
+      <a href="#project" data-target="project">프로젝트</a>
+      <a href="#patterns" data-target="patterns">다크패턴이란?</a>
+      <a href="#method" data-target="method">조사 설계</a>
+      <a href="#findings-cases" data-target="findings-cases">사례·규제</a>
+      <a href="#findings-citizens" data-target="findings-citizens">시민 경험</a>
+      <a href="#solutions" data-target="solutions">해결 시도</a>
+      <a href="#law" data-target="law">법·제도</a>
+      <a href="#petition" data-target="petition">청원</a>
+      <a href="#assistant" data-target="assistant">상담사</a>
+
+      <!-- ✅ 여기로 이동 -->
+      <button id="open-terms" class="terms-trigger">이용약관 보기</button>
+    </nav>
+  </div>
+</header>
+
 
   <main>
     <!-- HOME / HERO -->
-    <section id="home" class="section hero">
+    <section id="home" class="section hero page-section is-active">
       <div class="inner hero-grid">
         <div class="hero-main">
           <p class="eyebrow">GCP 세계시민 프로젝트 – 다크패턴 아카이브 & 청원</p>
@@ -84,7 +80,7 @@
     </section>
 
     <!-- 1. 문제 제기 -->
-    <section id="problem" class="section">
+    <section id="problem" class="section page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">01</p>
@@ -122,7 +118,7 @@
     </section>
 
     <!-- 2. 프로젝트 개요 & SDG -->
-    <section id="project" class="section section-alt">
+    <section id="project" class="section section-alt page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">02</p>
@@ -164,7 +160,7 @@
     </section>
 
     <!-- 3. 다크패턴이란? / 유형 -->
-    <section id="patterns" class="section">
+    <section id="patterns" class="section page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">03</p>
@@ -236,7 +232,7 @@
     </section>
 
     <!-- 4. 조사 설계 -->
-    <section id="method" class="section section-alt">
+    <section id="method" class="section section-alt page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">04</p>
@@ -296,11 +292,11 @@
     </section>
 
     <!-- 5. 중간 결과 ①: 사례 & 규제 -->
-    <section id="findings-cases" class="section">
+    <section id="findings-cases" class="section page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">05</p>
-          <h2>중간 결과 ①: 피해 사례 & 규제 흐름</h2>
+          <h2>피해 사례 & 규제 흐름</h2>
         </header>
 
         <div class="grid two">
@@ -351,7 +347,7 @@
     </section>
 
     <!-- 6. 중간 결과 ②: 시민 경험 -->
-    <section id="findings-citizens" class="section section-alt">
+    <section id="findings-citizens" class="section section-alt page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">06</p>
@@ -397,7 +393,7 @@
     </section>
 
     <!-- 7. 해결 시도 & 다음 단계 -->
-    <section id="solutions" class="section">
+    <section id="solutions" class="section page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">07</p>
@@ -466,7 +462,7 @@
     </section>
 
     <!-- 8. 법·제도 비교 -->
-    <section id="law" class="section section-alt">
+    <section id="law" class="section section-alt page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">08</p>
@@ -513,7 +509,7 @@
     </section>
 
     <!-- 9. 핵심 분야: 금융 · SNS -->
-    <section id="domains" class="section">
+    <section id="domains" class="section page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">09</p>
@@ -545,7 +541,7 @@
     </section>
 
     <!-- 10. 시민을 위한 실천 가이드 -->
-    <section id="guide" class="section section-alt">
+    <section id="guide" class="section section-alt page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">10</p>
@@ -577,7 +573,7 @@
     </section>
 
     <!-- 11. 청원문 -->
-    <section id="petition" class="section section-petition">
+    <section id="petition" class="section section-petition page-section">
       <div class="inner">
         <header class="section-header">
           <p class="eyebrow">11</p>
@@ -621,6 +617,73 @@
         </article>
       </div>
     </section>
+    <!-- 12. 다크패턴 법적 고민 상담사 (ChatGPT 연동 예정 영역) -->
+<section id="assistant" class="section section-alt page-section">
+  <div class="inner">
+    <header class="section-header">
+      <p class="eyebrow">12</p>
+      <h2>다크패턴 법적 고민 상담사 (GPT)</h2>
+      <p class="section-kicker">
+        다크패턴, 자동결제, 개인정보 남용… <span class="accent">“이거 불법 아닌가?”</span> 싶은 순간들을
+        정리해서 물어볼 수 있는 상담 공간입니다.
+      </p>
+    </header>
+
+    <div class="assistant-grid">
+      <article class="card assistant-panel">
+        <h3>질문을 적어보세요</h3>
+        <p class="meta">
+          예) “무료체험 후 자동결제 됐는데 환불 가능해?”, “해지 버튼이 안 보이는데 뭘 먼저 해야 해?”,
+          “이 약관 조항이 공정위 기준에 위배되는지 궁금해.”
+        </p>
+
+        <div id="legal-chat-log" class="chat-log">
+          <div class="chat-bubble bot">
+            안녕하세요. 다크패턴 & 이용약관 법적 고민 1차 정리용 GPT입니다.
+            실제 법률 자문이 아니라, 관련 법령·제도·절차를 이해하기 위한 정보 제공 용도입니다.
+          </div>
+        </div>
+
+        <form id="legal-chat-form" class="chat-input-row">
+          <input
+            id="legal-chat-input"
+            type="text"
+            placeholder="당신이 겪은 상황을 구체적으로 적어주세요. (예: 앱 이름, 날짜, 어떤 화면이었는지 등)"
+            autocomplete="off"
+          />
+          <button type="submit">보내기</button>
+        </form>
+
+        <p class="chat-disclaimer">
+          ⚠️ 이 도구는 법적 효력이 있는 공식 자문이 아닙니다.
+          실제 소송·분쟁 대응 시에는 변호사, 한국소비자원, 개인정보보호위원회 등 공적 기관과 반드시 상의해야 합니다.
+        </p>
+      </article>
+
+      <aside class="card assistant-side">
+        <h3>이 GPT는 어떤 역할을 하나요?</h3>
+        <ul class="bullet small">
+          <li>당신이 겪은 UI·약관 상황을 다크패턴 유형에 맞춰 정리해 줍니다.</li>
+          <li>어떤 법(전자상거래법, 개인정보보호법, 표시광고법 등)과 연결될 수 있는지 개괄을 제시합니다.</li>
+          <li>행정 구제(1372, 분쟁조정위, 공정위 신고 등)와 소송 사이에서 어떤 선택지가 있는지 안내합니다.</li>
+        </ul>
+        <p class="meta">
+          실제 구현 시에는 OpenAI API 또는 기타 LLM API와 연결해,
+          사용자가 입력한 내용을 토대로 답변을 이 카드 안에 스트리밍하도록 구성하면 됩니다.
+        </p>
+
+        <a
+          href="https://chatgpt.com/"
+          target="_blank"
+          rel="noreferrer"
+          class="btn primary"
+        >
+          새 탭에서 ChatGPT 열기
+        </a>
+      </aside>
+    </div>
+  </div>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -759,52 +822,127 @@
 </div>
  <script>
   (function () {
+    /* ========================
+       1. 약관 모달 제어
+       ======================== */
     const modal = document.getElementById("terms-modal");
-    if (!modal) return; // 안전장치
-
     const openBtn = document.getElementById("open-terms");
     const agreeBtn = document.getElementById("agree-terms");
-    const closeBtns = modal.querySelectorAll("[data-close-terms]");
+    const closeBtns = modal ? modal.querySelectorAll("[data-close-terms]") : [];
 
     function openModal() {
+      if (!modal) return;
       modal.classList.add("is-open");
       document.body.style.overflow = "hidden";
       modal.setAttribute("aria-hidden", "false");
     }
 
     function closeModal() {
+      if (!modal) return;
       modal.classList.remove("is-open");
       document.body.style.overflow = "";
       modal.setAttribute("aria-hidden", "true");
     }
 
-    // (선택) 버튼으로도 열 수 있게 – 있어도 되고 없어도 됨
+    // 버튼으로 열기 (옵션)
     if (openBtn) {
-      openBtn.addEventListener("click", openModal);
+      openBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        openModal();
+      });
     }
 
     // 닫기 버튼들
     closeBtns.forEach(function (btn) {
-      btn.addEventListener("click", closeModal);
+      btn.addEventListener("click", function () {
+        closeModal();
+      });
     });
 
     // 동의하기 버튼
     if (agreeBtn) {
       agreeBtn.addEventListener("click", function () {
-        // 동의했음을 기록
         localStorage.setItem("termsAgreed", "true");
         closeModal();
       });
     }
 
-    // ✅ 여기 핵심: 페이지 들어오면 자동으로 약관 팝업 띄우기
+    // ✅ 페이지 로드 시 자동으로 약관 띄우기
     window.addEventListener("load", function () {
       const agreed = localStorage.getItem("termsAgreed");
-      // 만약 "항상 뜨게" 하고 싶으면 if 조건을 그냥 지우고 openModal()만 남겨
-      if (agreed !== "true") {
-        openModal();
-      }
+
+      // 이미 동의한 사람에게는 다시 안 보이게
+      if (agreed === "true") return;
+
+      // 살짝 딜레이 줘서 자연스럽게
+      setTimeout(openModal, 300);
     });
+
+    /* ========================
+       2. 의사 페이지 전환 (SPA 느낌)
+       ======================== */
+    const sections = document.querySelectorAll(".page-section");
+    const navLinks = document.querySelectorAll(".site-nav a[data-target]");
+
+    function showSection(id) {
+      sections.forEach(function (sec) {
+        if (sec.id === id) {
+          sec.classList.add("is-active");
+        } else {
+          sec.classList.remove("is-active");
+        }
+      });
+      // 항상 상단으로
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+
+    // 네비 클릭 시 스크롤 대신 섹션 전환
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = link.getAttribute("data-target");
+        if (target) showSection(target);
+      });
+    });
+
+    // 혹시나 해서 기본값으로 home 보이게 설정
+    showSection("home");
+
+    /* ========================
+       3. 다크패턴 법 상담 챗봇 UI (프론트만)
+       ======================== */
+    const chatForm = document.getElementById("legal-chat-form");
+    const chatInput = document.getElementById("legal-chat-input");
+    const chatLog = document.getElementById("legal-chat-log");
+
+    function appendBubble(text, role) {
+      if (!chatLog) return;
+      const bubble = document.createElement("div");
+      bubble.className = "chat-bubble " + (role === "user" ? "user" : "bot");
+      bubble.textContent = text;
+      chatLog.appendChild(bubble);
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    if (chatForm && chatInput && chatLog) {
+      chatForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const value = chatInput.value.trim();
+        if (!value) return;
+
+        appendBubble(value, "user");
+        chatInput.value = "";
+
+        // 실제 GPT 연동은 백엔드 필요.
+        // 지금은 안내 메시지만 넣음.
+        setTimeout(function () {
+          appendBubble(
+            "현재 버전에서는 프론트엔드 데모입니다. 실제 다크패턴·법률 상담은 OpenAI API 또는 별도 백엔드 연결 후 이 영역에 자동으로 표시되도록 구현하면 됩니다.",
+            "bot"
+          );
+        }, 400);
+      });
+    }
   })();
 </script>
 </body>
